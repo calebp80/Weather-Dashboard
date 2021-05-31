@@ -1,0 +1,136 @@
+
+#header{
+    background-size: cover;
+    background-position-y: 40%;
+    color:white;
+    background-color:#0275d8;
+    position:relative !important;
+}
+
+
+#header h1{
+    font-size: 400%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    
+}
+
+
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+}
+
+
+#search-city{
+    width:80%;
+}
+
+
+#search-button-icon{
+    width:15px;
+    display:inline-block;
+}
+
+
+#current-weather {
+    padding-left: 15px;
+}
+
+
+#clear-storage{
+    color:grey;
+    text-decoration: none;
+    font-size:.75em;
+    margin: .5em 0em 0em .5em;
+}
+
+
+.weather-card{
+    width: 9rem;
+    background-color: #0275d8;
+    color: white;
+    text-align: center;
+}
+
+.uv-favorable{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-moderate{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-severe{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    #search-city{
+        width:100%;
+    }
+    #search-button{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 575px) {
+
+    #fiveDayForecastUl{
+        justify-content: center;
+    }
+}
+.happy img{
+width: 50px;
+animation: happy 7s linear infinite;
+}
+.happy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes happy{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.happy img:nth-child(1){
+    animation-delay: 2s;
+}.happy img:nth-child(2){
+    animation-delay: 2.5s;
+}.happy img:nth-child(3){
+    animation-delay: 3.5s;
+}.happy img:nth-child(4){
+    animation-delay: 4.5s;
+}.happy img:nth-child(5){
+    animation-delay: 6.2s;
+}.happy img:nth-child(6){
+    animation-delay: 3.5s;
+}.happy img:nth-child(7){
+    animation-delay: 2.7s;
+}
