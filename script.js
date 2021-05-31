@@ -181,13 +181,11 @@ var renderCities = () => {
     
 }
 
-
 $('#search-button').on("click", (event) => {
 event.preventDefault();
 currentCity = $('#search-city').val();
 getCurrentConditions(event);
 });
-
 
 $('#city-results').on("click", (event) => {
     event.preventDefault();
@@ -195,7 +193,6 @@ $('#city-results').on("click", (event) => {
     currentCity=$('#search-city').val();
     getCurrentConditions(event);
 });
-
 
 $("#clear-storage").on("click", (event) => {
     localStorage.clear();
